@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulrahman Almashwadi - Data Analyst Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Abdulrahman Almashwadi, Data Analyst skilled in SQL, Python, Power BI, and Excel.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="animations.css?v=2.0.1">
+    <link rel="stylesheet" href="style.css?v=2.0.1">
+</head>
+
+<body>
+    <!-- Background Canvas for Grid/Data Nodes -->
+    <div id="background-animation-container"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">A.A<span>.</span></a>
+            <button class="mobile-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home/Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Unlocking Insights<br>through <span>Data</span>.</h1>
+                <p class="hero-subtitle">I'm <strong class="hero-name">Abdulrahman Almashwadi</strong>, a Data Analyst
+                    transforming raw
+                    data into business-driven narratives using Python, SQL, and BI tools.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="images/CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i
+                            class="fas fa-download"></i>
+                        Get Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-portrait">
+                    <img src="images/personal image .png" alt="Personal portrait of Abdulrahman Almashwadi">
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>Academic foundation shaping analytical rigor.</p>
+            </div>
+            <div class="education-card">
+                <div class="edu-header">
+                    <div>
+                        <h3>Bachelor of Computer Science</h3>
+                        <h4>Faculty of Computers and Information, Sohag University</h4>
+                    </div>
+                    <div class="edu-date">2022 - 2026</div>
+                </div>
+                <div class="edu-body">
+                    <p class="gpa"><i class="fas fa-graduation-cap"></i> GPA: <strong>VERY GOOD</strong></p>
+                    <p><strong>Relevant Coursework:</strong> Data Mining, Database Systems, Statistics & Probability,
+                        Data Analytics</p>
+                    <p class="edu-desc">Pursuing a comprehensive Computer Science degree with a focus on data analysis
+                        and software development. Developing strong analytical and technical skills through coursework
+                        and practical projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="section-header">
+                <h2>Technical Expertise</h2>
+                <p>Core competencies driving data transformation and insights.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming & Databases -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python (Pandas, NumPy)</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> MySQL Workbench</span>
+                    </div>
+                </div>
+
+                <!-- Visualization & BI -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Visualization & BI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-chart-bar"></i> Power BI</span>
+                        <span class="skill-tag"><i class="fas fa-chart-area"></i> Tableau</span>
+                        <span class="skill-tag"><i class="fas fa-table"></i> Excel (PivotTables, Power Query)</span>
+                        <span class="skill-tag"><i class="fas fa-chart-line"></i> Matplotlib</span>
+                        <span class="skill-tag"><i class="fas fa-chart-network"></i> Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Environments -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Tools & Environments</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-book-open"></i> Jupyter Notebook</span>
+                        <span class="skill-tag"><i class="fas fa-code-branch"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fab fa-windows"></i> MS Office 365</span>
+                        <span class="skill-tag"><i class="fas fa-robot"></i> ChatGPT (Prompt Engineering)</span>
+                    </div>
+                </div>
+
+                <!-- Analytical Concepts -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Analytical Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-search-chart"></i> Descriptive Analytics</span>
+                        <span class="skill-tag"><i class="fas fa-flask"></i> Hypothesis Testing</span>
+                        <span class="skill-tag"><i class="fas fa-arrow-trend-up"></i> Trend Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category soft-skills">
+                    <div class="skill-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Analytical Thinking</span>
+                        <span class="skill-tag">Data Storytelling</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Collaboration</span>
+                        <span class="skill-tag">Effective Communication</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Data-driven solutions showcasing actionable insights.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container" id="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="powerbi">Power BI</button>
+                <button class="filter-btn" data-filter="tableau">Tableau</button>
+                <button class="filter-btn" data-filter="excel">Excel</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Corona -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-media">
+                        <video src="images/corona powerbi.mp4" autoplay loop muted playsinline
+                            aria-label="Corona Data Analysis Video"></video>
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/powerbi_advanced_project_covid_19-"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Corona Data Analysis</h3>
+                        <p>Comprehensive analysis of COVID-19 trends, focusing on infection rates, mortality, and impact
+                            across different demographics.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-bullseye"></i> Goal: Identify high-risk zones</span>
+                            <span><i class="fas fa-chart-line"></i> +15% Accuracy in predictive forecasting</span>
+                        </div>
+                        <div class="tech-stack">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-database" title="SQL"></i>
+                            <i class="fas fa-chart-pie" title="Tableau"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suicide -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-media">
+                        <video src="images/suicide.mp4" autoplay loop muted playsinline
+                            aria-label="Suicide Data Analysis Video"></video>
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/suicide_rate_project-" target="_blank"
+                                rel="noopener noreferrer" class="view-btn">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Suicide Data Analysis</h3>
+                        <p>A deep dive into global suicide rates to identify socio-economic patterns and key driving
+                            factors over time.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-search"></i> Insight: Economic correlation trends</span>
+                            <span><i class="fas fa-chart-bar"></i> Processed 50k+ Demographic records</span>
+                        </div>
+                        <div class="tech-stack">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-table" title="Excel"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales -->
+                <div class="project-card" data-category="tableau">
+                    <div class="project-media">
+                        <video src="images/Sales & Customer Dashboards.mp4" autoplay loop muted playsinline
+                            aria-label="Sales Data Analysis Video"></video>
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/tableau_sales_dashboard_and_customer"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Data Analysis</h3>
+                        <p>Analyzed sales pipeline and customer behaviors to optimize conversion rates and track KPI
+                            progress.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-arrow-trend-up"></i> +22% Sales Pipeline Efficiency</span>
+                            <span><i class="fas fa-users-viewfinder"></i> Optimized Customer Churn</span>
+                        </div>
+                        <div class="tech-stack">
+                            <i class="fas fa-database" title="SQL"></i>
+                            <i class="fas fa-chart-line" title="Power BI"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tableau Dashboard -->
+                <div class="project-card" data-category="tableau">
+                    <div class="project-media">
+                        <video src="images/Tableau Dashboard.mp4" autoplay loop muted playsinline
+                            aria-label="Tableau Dashboard Video"></video>
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/tableau_sales_dashboard" target="_blank"
+                                rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tableau BI Dashboard</h3>
+                        <p>Built highly interactive business dashboards allowing stakeholders to drill down into
+                            operational metrics.</p>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-tachometer-alt"></i> Executive Insights</span>
+                            <span><i class="fas fa-clock"></i> Saved 10+ hours of manual reporting</span>
+                        </div>
+                        <div class="tech-stack">
+                            <i class="fas fa-chart-pie" title="Tableau"></i>
+                            <i class="fas fa-database" title="SQL"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Covid-19 SQL Exploration -->
+                <div class="project-card" data-category="sql">
+                    <div class="project-media">
+                        <img src="images/COVID-19 Data Exploration sql.gif" alt="COVID-19 SQL GIF">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/SQL-Analysis-of-the-COVID-19-Data-Exploration"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>COVID-19 Data Exploration</h3>
+                        <p>Detailed SQL exploration of the COVID-19 dataset, extracting critical global health insights.
+                        </p>
+                        <div class="tech-stack">
+                            <i class="fas fa-database" title="SQL"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Job Market V1 -->
+                <div class="project-card" data-category="python">
+                    <div class="project-media">
+                        <img src="images/Python Analysis of the Data Job Market V1.0.gif" alt="Python Job Market V1">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/Python_Analysis_of_the_Data_Job_Market_V1.0"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Job Market Analysis V1.0</h3>
+                        <p>Python-driven analysis to uncover trends, salary distributions, and top skills in the Data
+                            Job Market.</p>
+                        <div class="tech-stack">
+                            <i class="fab fa-python" title="Python"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Job Market V2 -->
+                <div class="project-card" data-category="python">
+                    <div class="project-media">
+                        <img src="images/Python Analysis of the Data Job Market V2.0.gif" alt="Python Job Market V2">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/Python_Analysis_of_the_Data_Job_Market_V2.0"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Job Market Analysis V2.0</h3>
+                        <p>Advanced iteration of the job market analysis using Python for deeper predictive metrics.</p>
+                        <div class="tech-stack">
+                            <i class="fab fa-python" title="Python"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL Data Jobs Postings -->
+                <div class="project-card" data-category="sql">
+                    <div class="project-media">
+                        <img src="images/SQL Analysis of Data Jobs Postings.gif" alt="SQL Job Postings">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/SQL_Analysis_of_Data_Jobs_Postings"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SQL Job Postings Analysis</h3>
+                        <p>Leveraging SQL queries to filter, aggregate, and report on large-scale job posting databases.
+                        </p>
+                        <div class="tech-stack">
+                            <i class="fas fa-database" title="SQL"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Excel Data Jobs Analysis -->
+                <div class="project-card" data-category="excel">
+                    <div class="project-media">
+                        <img src="images/excel Data Analysis of Data Jobs Postings.gif" alt="Excel Job Postings">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/Excel_Data_Analysis_of_Data_Jobs_Postings"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Excel Job Market Insights</h3>
+                        <p>Utilized advanced Pivot Tables and Power Query in Excel for visual job market exploration.
+                        </p>
+                        <div class="tech-stack">
+                            <i class="fas fa-table" title="Excel"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PowerBI Data Jobs Survey -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-media">
+                        <img src="images/powerBI Data Jobs Survey Analysis.gif" alt="PowerBI Survey">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/PowerBI_Data_Jobs_Survey_Analysis" target="_blank"
+                                rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Power BI Survey Dashboard</h3>
+                        <p>Interactive dashboard visualizing massive survey responses regarding data job satisfaction.
+                        </p>
+                        <div class="tech-stack">
+                            <i class="fas fa-chart-bar" title="Power BI"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PowerBI Job Market V1 -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-media">
+                        <img src="images/powerbi Data Jobs Market Dashboard V1.0.gif" alt="PowerBI Job Market V1">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/PowerBI_Data_Jobs_Market_Dashboard_V1.0"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Job Market Dashboard V1.0</h3>
+                        <p>A Power BI dashboard tracking current open roles, demand, and salary ranges across tech
+                            sectors.</p>
+                        <div class="tech-stack">
+                            <i class="fas fa-chart-bar" title="Power BI"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PowerBI Job Market V2 -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-media">
+                        <img src="images/powerbi Data Jobs Market Dashboard V2.0.gif" alt="PowerBI Job Market V2">
+                        <div class="project-overlay">
+                            <a href="https://github.com/unknown010112/powerbi_Data_Jobs_Market_Dashboard_V2.0"
+                                target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Job Market Dashboard V2.0</h3>
+                        <p>Enhanced iteration featuring predictive trend lines and customized DAX measures.</p>
+                        <div class="tech-stack">
+                            <i class="fas fa-chart-bar" title="Power BI"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certificates Section (Folder UI) -->
+        <section id="certificates" class="certificates-section section-padding">
+            <div class="section-header">
+                <h2>Certificates & Achievements</h2>
+                <p>Professional milestones organized in a structured archive.</p>
+            </div>
+
+            <div class="folder-system" id="folder-system">
+                <div class="folder-sidebar">
+                    <div class="folder-tab active" data-folder="all">
+                        <i class="fas fa-folder-open"></i> All Certs
+                    </div>
+                    <div class="folder-tab" data-folder="microsoft">
+                        <i class="fas fa-folder"></i> linkedin
+                    </div>
+                    <div class="folder-tab" data-folder="cisco">
+                        <i class="fas fa-folder"></i> Cisco
+                    </div>
+                    <div class="folder-tab" data-folder="data">
+                        <i class="fas fa-folder"></i> Analytics
+                    </div>
+                </div>
+
+                <div class="folder-content">
+                    <div class="cert-grid">
+                        <div class="cert-item" data-category="data" data-src="cert/mckinsey forward program.png">
+                            <div class="cert-thumb"><img src="cert/mckinsey forward program.png" alt="Forward Program">
+                            </div>
+                            <div class="cert-details">
+                                <h4>Forward Program</h4>
+                                <span>McKinsey & Company</span>
+                                <p class="cert-desc">Developed leadership, problem-solving, and professional
+                                    adaptability skills.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="data" data-src="cert/sql data reporting.jpg">
+                            <div class="cert-thumb"><img src="cert/sql data reporting.jpg" alt="SQL Data Reporting">
+                            </div>
+                            <div class="cert-details">
+                                <h4>SQL Data Reporting</h4>
+                                <span>DataCamp</span>
+                                <p class="cert-desc">Mastered data extraction, joining tables, and complex querying for
+                                    business reporting.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="data" data-src="cert/data for student.jpg">
+                            <div class="cert-thumb"><img src="cert/data for student.jpg" alt="Data for Student"></div>
+                            <div class="cert-details">
+                                <h4>Data for Student</h4>
+                                <span>Online Platform</span>
+                                <p class="cert-desc">Foundational data literacy, data cleaning, and dataset handling
+                                    principles.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="data" data-src="cert/data analyst.png">
+                            <div class="cert-thumb"><img src="cert/data analyst.png" alt="Data Analyst"></div>
+                            <div class="cert-details">
+                                <h4>Data Analyst</h4>
+                                <span>linkedin Platform</span>
+                                <p class="cert-desc">Mastered end-to-end data pipelines, statistical insights, and
+                                    advanced Python methodologies.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="cisco" data-src="cert/cisco.png">
+                            <div class="cert-thumb"><img src="cert/cisco.png" alt="Cisco"></div>
+                            <div class="cert-details">
+                                <h4>Analytics Essentials</h4>
+                                <span>Cisco</span>
+                                <p class="cert-desc">Learned core network telemetry, data security, and visualization
+                                    practices.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="microsoft" data-src="cert/microsoft.png">
+                            <div class="cert-thumb"><img src="cert/microsoft.png" alt="Microsoft"></div>
+                            <div class="cert-details">
+                                <h4>Microsoft Cert</h4>
+                                <span>Microsoft</span>
+                                <p class="cert-desc">Validated expertise in MS environments, data manipulation, and
+                                    enterprise toolsets.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="data" data-src="cert/powerbi.png">
+                            <div class="cert-thumb"><img src="cert/powerbi.png" alt="Power BI"></div>
+                            <div class="cert-details">
+                                <h4>Power BI Mastery</h4>
+                                <span>Online Platform</span>
+                                <p class="cert-desc">Developed highly interactive dashboards, DAX queries, and robust
+                                    data models.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="data" data-src="cert/sql.png">
+                            <div class="cert-thumb"><img src="cert/sql.png" alt="SQL"></div>
+                            <div class="cert-details">
+                                <h4>Advanced SQL</h4>
+                                <span>Online Platform</span>
+                                <p class="cert-desc">Learned advanced SQL querying, joins, and real-world data analysis
+                                    techniques.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item" data-category="data" data-src="cert/tableau.png">
+                            <div class="cert-thumb"><img src="cert/tableau.png" alt="Tableau"></div>
+                            <div class="cert-details">
+                                <h4>Tableau Pro</h4>
+                                <span>Online Platform</span>
+                                <p class="cert-desc">Explored advanced data blending, LOD expressions, and visual data
+                                    storytelling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses-section section-padding">
+            <div class="section-header">
+                <h2>Professional Development</h2>
+                <p>Successfully completed specialized courses and applied the acquired knowledge through practical
+                    projects and real-world implementations.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container" id="course-filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="tableau">Tableau</button>
+                <button class="filter-btn" data-filter="excel">Excel</button>
+                <button class="filter-btn" data-filter="statistics">Statistics</button>
+                <button class="filter-btn" data-filter="tools">Tools & AI</button>
+            </div>
+
+            <div class="course-cards-container">
+                <!-- Course 1 -->
+                <div class="course-card" data-category="sql">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
+                            alt="SQL Course">
+                        <div class="duration-badge">Data Analysis</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-database"></i> SQL</span>
+                        <h3>SQL for Data Analytics</h3>
+                        <p>Essential SQL skills for data extraction, manipulation, and analysis.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Luke Barousse</span>
+                            <span><i class="fas fa-link"></i> Platform</span>
+                        </div>
+                        <a href="https://www.lukebarousse.com/sql" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fas fa-play-circle"></i> Watch Course</a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card" data-category="python">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=60"
+                            alt="Python Course">
+                        <div class="duration-badge">Data Analysis</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fab fa-python"></i> Python</span>
+                        <h3>Python for Data Analytics</h3>
+                        <p>Learn Python programming tailored for data manipulation.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Luke Barousse</span>
+                            <span><i class="fas fa-link"></i> Platform</span>
+                        </div>
+                        <a href="https://www.lukebarousse.com/python" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fas fa-play-circle"></i> Watch Course</a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card" data-category="tools">
+                    <div class="course-thumbnail">
+                        <img src="https://img.youtube.com/vi/uhyMqbZI6rM/hqdefault.jpg" alt="ChatGPT Course">
+                        <div class="duration-badge">Tutorial</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-robot"></i> AI</span>
+                        <h3>ChatGPT for Data Analytics</h3>
+                        <p>Leveraging AI strictly for optimizing workflows.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Luke Barousse</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=uhyMqbZI6rM" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fab fa-youtube"></i> Watch Course</a>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card" data-category="excel">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
+                            alt="Excel Course">
+                        <div class="duration-badge">Data Analysis</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-table"></i> Excel</span>
+                        <h3>Excel for Data Analytics</h3>
+                        <p>Advanced Excel techniques, pivot tables, and power query.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Luke Barousse</span>
+                            <span><i class="fas fa-link"></i> Platform</span>
+                        </div>
+                        <a href="https://www.lukebarousse.com/excel" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fas fa-play-circle"></i> Watch Course</a>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card" data-category="tableau">
+                    <div class="course-thumbnail">
+                        <img src="https://img.youtube.com/vi/K3pXnbniUcM/hqdefault.jpg" alt="Tableau Course">
+                        <div class="duration-badge">21 Hours</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-chart-pie"></i> Beginner → Advanced</span>
+                        <h3>Tableau Ultimate Full Course</h3>
+                        <p>From Zero to HERO. Master Tableau for Data Science step-by-step.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Baraa</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=K3pXnbniUcM" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fab fa-youtube"></i> Watch Course</a>
+                    </div>
+                </div>
+
+
+
+                <!-- Course 7 -->
+                <div class="course-card" data-category="statistics">
+                    <div class="course-thumbnail">
+                        <img src="https://img.youtube.com/vi/K9teElePNkk/hqdefault.jpg" alt="Statistics Full Lecture">
+                        <div class="duration-badge">Full Lecture</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-chart-bar"></i> Statistics</span>
+                        <h3>Statistics – Full Lecture</h3>
+                        <p>Foundational statistics required for quantitative analysis in data science.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> datatab</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                        <a href="https://youtu.be/K9teElePNkk" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fab fa-youtube"></i> Watch Course</a>
+                    </div>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="course-card" data-category="statistics">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&auto=format&fit=crop&q=60"
+                            alt="Statistical Analysis Playlist">
+                        <div class="duration-badge">26 Videos</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-chart-line"></i> Statistics</span>
+                        <h3>Statistical Analysis (Playlist)</h3>
+                        <p>Core methods for hypothesis testing and interpreting data distributions.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Dr. Ahmed Hagag</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLxIvc-MGOs6ilU3FPyJr3T-VkufZy2NGi"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i
+                                class="fab fa-youtube"></i> Watch Course</a>
+                    </div>
+                </div>
+
+                <!-- Course 9 -->
+                <div class="course-card" data-category="statistics">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
+                            alt="Probability Channel">
+                        <div class="duration-badge">Channel</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-dice"></i> Statistics</span>
+                        <h3>Probability and Statistics</h3>
+                        <p>In-depth coverage of probability distributions and theorems.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Dr. Ahmed Hagag</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                        <a href="https://www.youtube.com/@dr.ahmedhagag" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fab fa-youtube"></i> Watch Channel</a>
+                    </div>
+                </div>
+
+                <!-- Course 10 -->
+                <div class="course-card" data-category="tools">
+                    <div class="course-thumbnail">
+                        <img src="https://img.youtube.com/vi/SFonhAg3HE0/hqdefault.jpg" alt="PowerPoint Course">
+                        <div class="duration-badge">6+ Hours</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-desktop"></i> Tools</span>
+                        <h3>PowerPoint Full Course</h3>
+                        <p>Mastering presentation design for executive reporting.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Learnit Training</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=SFonhAg3HE0" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fab fa-youtube"></i> Watch Course</a>
+                    </div>
+                </div>
+
+                <!-- Course 11 -->
+                <div class="course-card" data-category="tools">
+                    <div class="course-thumbnail">
+                        <img src="https://img.youtube.com/vi/oTX-rINkrJc/hqdefault.jpg" alt="Word Course">
+                        <div class="duration-badge">6+ Hours</div>
+                    </div>
+                    <div class="course-content">
+                        <span class="skill-level"><i class="fas fa-file-word"></i> Tools</span>
+                        <h3>Word Full Course</h3>
+                        <p>Comprehensive training on document creation and formatting.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-tie"></i> Learnit Training</span>
+                            <span><i class="fab fa-youtube"></i> YouTube</span>
+                        </div>
+                        <a href="https://youtu.be/oTX-rINkrJc" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline"><i class="fab fa-youtube"></i> Watch Course</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="contact-card">
+                <h2>Let's build something Data-Driven</h2>
+                <p>Looking for a data analyst who can translate numbers into actionable strategies? I'm open to new
+                    opportunities.</p>
+                <div class="contact-methods">
+                    <a href="mailto:abdosmartg40@gmail.com" target="_blank" rel="noopener noreferrer"
+                        class="contact-pill"><i class="fas fa-envelope"></i> Email
+                        Me</a>
+                    <a href="https://www.linkedin.com/in/abdulrahman-almashwadi-7853b8212/" target="_blank"
+                        rel="noopener noreferrer" class="contact-pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/unknown010112" target="_blank" rel="noopener noreferrer"
+                        class="contact-pill"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Certificates -->
+    <div id="cert-modal" class="modal">
+        <span class="modal-close"><i class="fas fa-times"></i></span>
+        <img class="modal-content" id="modal-img" alt="Certificate Preview">
+        <div id="modal-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Abdulrahman Almashwadi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Main JS -->
+    <script src="background-animations.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
